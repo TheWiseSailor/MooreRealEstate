@@ -1,0 +1,44 @@
+.AgentProfileBg {
+  background-color: rgb(197, 160, 160);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.AgentImage {
+  width: 400px !important;
+  height: 400px;
+  border-radius: 40px;
+  margin-bottom: -120px;
+}
+.Description {
+  font-size: 28px;
+  padding-bottom: -20px;
+}
+
+@media (max-width: 600px) {
+  .AgentImage {
+    max-width: 60%;
+    max-height: 40%;
+  }
+  .AgentName {
+    margin-bottom: -50px;
+    max-width: 200px;
+    font-size: 25px;
+  }
+  .Description {
+    font-size: 24px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    max-width: 300px;
+    margin-bottom: -20px;
+  }
+}
+.SocialLinks {
+  display: flex;
+  gap: 10px;
+}

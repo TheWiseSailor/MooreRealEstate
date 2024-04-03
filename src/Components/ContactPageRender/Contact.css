@@ -1,0 +1,61 @@
+.contact-container-form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../ContactPageRender/ContactBg.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.contact-form-container-page {
+  width: 60%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 28px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+.button-container-page {
+  background-color: #2196f3;
+  color: white;
+  padding: 14px 0;
+
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 150px;
+  margin: 0 auto;
+  transition: background-color 0.9s ease;
+}
+.button-container-page {
+  margin-top: 20px;
+}
+.button-container-page:hover {
+  background-color: #4caf50;
+}
+
+.confirmation-message-container {
+  background-color: #4caf50;
+  color: white;
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 16px;
+}
