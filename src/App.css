@@ -1,0 +1,755 @@
+
+
+@import "tailwindcss/utilities";
+
+/* start: global styles */
+body {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.7;
+}
+
+* {
+  outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+  transition: 0.4s;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #f69314;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+button.rounded {
+  background: #f69314;
+  border: none;
+
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+p.large-paragraph {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+/* end: global styles */
+
+/* start: header styles */
+#header-hero-container {
+  min-height: 600px;
+  height: calc(100vh);
+  position: relative;
+}
+.sticky-header {
+  background-color: #919191;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+  background: transparent;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+#logo {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  height: 50px;
+display: block;
+}
+@media (min-width: 769px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#close-flyout {
+  display: none;
+}
+
+header ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header ul.is-sticky li a,
+#logo {
+  color: #000000;
+}
+
+header ul li a:hover,
+header ul li a.active,
+#logo {
+  color: #f69314;
+}
+
+header ul.is-sticky li a:hover,
+header ul.is-sticky li a.active,
+#logo {
+  color: #ffffff;
+}
+/* end: header styles */
+
+/* start: hero section styles */
+#hero {
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")
+    center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero .fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(52, 58, 64, 0.9);
+  z-index: 1;
+}
+
+#hero .hero-text {
+  position: absolute;
+  top: 50%;
+  margin: -75px auto 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+  width: 500px;
+  text-align: center;
+}
+
+#hero .hero-text p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1rem;
+}
+/* end: hero section styles */
+
+/* start: how it works styles */
+#how-it-works {
+  padding: 3rem 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+#how-it-works h2 {
+  margin-bottom: 3rem;
+}
+
+#how-it-works .flex > div {
+  width: 30%;
+}
+
+#how-it-works h4 {
+  color: #343a40;
+  margin-top: 1rem;
+}
+
+#how-it-works span.fas {
+  color: #f69314;
+  font-size: 35px;
+}
+/* end: how it works styles */
+/* PROPERTY SECTIION */
+.property-container {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+}
+.Todays-Title,
+.AgentHomepage {
+  color: #f69314;
+}
+.property-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.property-card:hover {
+  transform: scale(1.05);
+}
+
+.property-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+}
+
+.property-details {
+  padding: 12px;
+}
+
+.property-details p {
+  margin: 0;
+  padding: 4px;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.property-details p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* RealEstateListing.css */
+.listing-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.listing-button:hover {
+  background-color: #26ff31;
+}
+.green-button {
+  background-color: #0065fdc7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.green-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 767px) {
+  .green-button {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+    width: 100%;
+    text-decoration: none !important;
+  }
+}
+.property-address {
+  display: inline-block;
+  margin-right: 10px;
+}
+h1 {
+  margin: 0;
+
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .property-card {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+/* ABOUT US SECTION */
+.about-us-container {
+  padding: 40px 0;
+  text-align: center;
+}
+/* Add other styles as needed */
+
+.about-us-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-image {
+  width: 50%;
+  max-width: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .mobile-image {
+    width: 100%;
+  }
+}
+/* END OF ABOUT US */
+
+/* Agent Homepageimages */
+
+.real-estate-agents-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 150px;
+}
+
+.agent-card {
+  border: 1px solid #ccc;
+  border-radius: 38px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 250px;
+  margin: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.agent-card:hover {
+  transform: scale(1.05);
+}
+
+.agent-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.agent-details {
+  padding: 15px;
+}
+
+.agent-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #f69314;
+  display: block;
+  margin: 0 auto;
+}
+.agent-name {
+  animation: pulse 3.5s infinite;
+}
+.agent-name:hover {
+  color: grey;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* CONTACT FORM START */
+
+.ContactUsNow {
+  text-align: center;
+  color: #f69314;
+}
+
+.contact-container-form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.company-info-container {
+  max-width: 200px;
+  margin: 20px;
+  padding: 50px;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 150px;
+
+  text-align: center;
+}
+
+.contact-form-container {
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 50px;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+
+.contact-form-container .form-container {
+  display: grid;
+  gap: 16px;
+}
+
+.label-container {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  max-width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid #f69314;
+  border-radius: 30px;
+  resize: vertical;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.button-container {
+  background-color: #2196f3;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 150px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.button-container:hover {
+  background-color: #4caf50;
+}
+
+.confirmation-message-container {
+  background-color: #4caf50;
+  color: white;
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* AppStyles.css */
+.ContactHomePageHeader-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* SOCIAL LOGOS */
+@media (min-width: 620px) {
+  .contact-form-container {
+    width: 100%;
+  }
+  .company-info-container {
+    max-height: 370px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1468px) {
+  .contact-container-form {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 119px) {
+  .contact-container-form {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .contact-form-container {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .contact-form-container .form-container {
+    padding-bottom: 10px;
+  }
+}
+/* CONTACT FORM END */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .real-estate-agents-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .agent-card {
+    width: 80%;
+  }
+
+  .agent-image {
+    height: 300;
+    min-height: 400px;
+  }
+}
+/* Footer.css */
+.FooterText{
+  color: white;
+
+  font-size: 15px;
+font-weight: bold;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+ 
+  background-color: #919191;
+
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
+/* start: media queries */
+@media (max-width: 991px) {
+  #logo {
+    top: 1px;
+  }
+
+  #nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    background: #fff;
+    right: -100%;
+    top: 0;
+    margin: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 5px 0 10px 3px #999;
+  }
+
+  #close-flyout {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 30px;
+    color: #777;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  nav ul li:first-child {
+    margin-top: 50px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #212529;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #f69314;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .large-paragraph {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+
+  #hero .hero-text {
+    width: 400px;
+  }
+
+  #agents .card {
+    width: 49%;
+  }
+}
+
+@media (max-width: 500px) {
+  #hero .hero-text {
+    width: 330px;
+  }
+
+  #how-it-works .flex {
+    display: block;
+  }
+
+  #how-it-works .flex > div {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero .hero-text {
+    max-width: 275px;
+    width: 100%;
+  }
+
+  #properties button.rounded {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 200px;
+  }
+}
+/* end: media queries */
+
+/* Media query for mobile view (500 pixels or less) */
+@media (max-width: 500px) {
+  .property-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .green-button {
+    margin-top: 10px;
+  }
+}
