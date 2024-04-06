@@ -1,26 +1,27 @@
 .HeaderPrimary {
-  background: #AE887B;
+  background: #008080;
   padding: 20px 0;
   transition: background-color 0.3s ease;
   position: relative;
   z-index: 1000;
 }
-
+.HeaderPrimary.contact {
+  background-color: rgb(0, 112, 115); 
+  color: white; 
+}
+.HeaderPrimary.resume {
+  background-color: #002B5B;
+  max-height: 30px;
+}
+.HeaderPrimary.portfolio {
+  background-color: #EA5455;
+}
 .header {
   margin: 0 auto;
 }
 
-.HeaderPrimary.esports {
-  color: black;
-}
 
-.header.esports {
-  position: relative;
-  background-color: rgb(0, 112, 115);
-  margin-top: -20px;
 
-  margin-bottom: -45px;
-}
 
 .container {
   width: 90%;
@@ -31,8 +32,8 @@
 }
 
 .logo {
-  font-size: 24px;
-  max-width: 120px;
+
+  max-width: 150px;
   font-weight: bold;
   color: #ffe9e9;
   text-decoration: none;
@@ -86,7 +87,7 @@
   min-width: 100px;
   margin-left: -10px;
   border-radius: 0 0 10px 10px;
-  background-color: #ffffff;
+  background-color: rgb(0, 112, 115);
 }
 
 @media (max-width: 768px) {
@@ -103,7 +104,7 @@
 
   .navbar ul li a {
     text-decoration: none;
-    color: rgb(255, 245, 106);
+    color: #fdfdfd;
     transition: color 0.3s ease;
   }
 
