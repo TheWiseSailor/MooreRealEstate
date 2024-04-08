@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "../App.css";
-import AOSInitializer from "./AOS/AOSInitializer";
-import AboutUsImage from "./images/AboutUsImages/About us.png";
-import TopAboutImage from "./images/AboutUsImages/TopAboutImage.png";
-import BottomAboutImage from "./images/AboutUsImages/BottomAboutImage.png";
+import "../../App.css";
+
+import AOSInitializer from "../AOS/AOSInitializer";
+import AboutUsImage from "../images/AboutUsImages/About us.png";
+import TopAboutImage from "../images/AboutUsImages/TopAboutImage.png";
+import BottomAboutImage from "../images/AboutUsImages/BottomAboutImage.png";
 
 const AboutUs = () => {
   const [isMobileView, setIsMobileView] = useState(false);

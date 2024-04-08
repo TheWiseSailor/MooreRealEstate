@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Listing1Image from "./Properties/PropertyOfTheDayImages/Listing1/Listing1.png";
-import Listing2Image from "./Properties/PropertyHomepageImages/Listing2.png";
-import Listing3Image from "./Properties/PropertyHomepageImages/Listing3.png";
-import Listing4Image from "./Properties/PropertyHomepageImages/Listing4.png";
-import AOSInitializer from "./AOS/AOSInitializer";
+import Listing1Image from "../Properties/PropertyOfTheDayImages/Listing1/Listing1.png";
+import Listing2Image from "../Properties/PropertyHomepageImages/Listing2.png";
+import Listing3Image from "../Properties/PropertyHomepageImages/Listing3.png";
+import Listing4Image from "../Properties/PropertyHomepageImages/Listing4.png";
+import AOSInitializer from "../AOS/AOSInitializer";
+import "../../App.css";
 
-import "../App.css";
 
 const PropertyHomePage = () => {
   const topProperties = [

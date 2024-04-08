@@ -1,11 +1,11 @@
 // HomepageRender.js
 import React from "react";
-import Hero from "./Hero";
-import PropertyHomepage from "./PropertyHomePage";
-import AgentHomePage from "./AgentsHomePage";
-import ContactsHomePage from "./ContactsHomePage";
-import Works from "./Works";
-import AboutUs from "./AboutUs";
+import Hero from "../Components/HomePage/Hero";
+import PropertyHomepage from "../Components/HomePage/PropertyHomePage";
+import AgentHomePage from "../Components/HomePage/AgentsHomePage";
+import ContactsHomePage from "../Components/HomePage/ContactsHomePage";
+import Works from "../Components/HomePage/Works";
+import AboutUs from "../Components/HomePage/AboutUs";
 import "../App.css";
 
 const HomepageRender = () => {

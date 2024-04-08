@@ -2,13 +2,13 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import AOSInitializer from "./AOS/AOSInitializer";
-import "../App.css";
+import AOSInitializer from "../AOS/AOSInitializer";
+import "../../App.css";
 
-import SamanthaBennettImage from "./images/AgentHomepageImages/SamanthaBennett.png";
-import AnnaMaeImage from "./images/AgentHomepageImages/AnnaMae.png";
-import ZachHollandImage from "./images/AgentHomepageImages/ZachHolland.png";
-import KenLowellImage from "./images/AgentHomepageImages/KenLowell.png";
+import SamanthaBennettImage from "../images/AgentHomepageImages/SamanthaBennett.png";
+import AnnaMaeImage from "../images/AgentHomepageImages/AnnaMae.png";
+import ZachHollandImage from "../images/AgentHomepageImages/ZachHolland.png";
+import KenLowellImage from "../images/AgentHomepageImages/KenLowell.png";
 
 const agentData = [
   {

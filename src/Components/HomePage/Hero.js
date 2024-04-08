@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Slider from "react-slick";
-import AOSInitializer from "./AOS/AOSInitializer";
-import "../App";
+import AOSInitializer from "../AOS/AOSInitializer";
+import "../../App.css";
 // Define the HeroSection functional component
 const HeroSection = () => {
   // useEffect hook for performing side effects

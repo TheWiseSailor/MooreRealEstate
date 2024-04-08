@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../App.css";
-import Instagram from "./SocialLinkImages/Instagram.png";
-import Facebook from "./SocialLinkImages/Facebook.png";
-import Twitter from "./SocialLinkImages/Twitter.png";
-import AOSInitializer from "./AOS/AOSInitializer";
+import "../../App.css";
+import Instagram from "../SocialLinkImages/Instagram.png";
+import Facebook from "../SocialLinkImages/Facebook.png";
+import Twitter from "../SocialLinkImages/Twitter.png";
+import AOSInitializer from "../AOS/AOSInitializer";
 
 const ContactForm = () => {
   const initialFormData = {

@@ -1,6 +1,6 @@
 import React from "react";
-import "../App.css";
-import AOSInitializer from "./AOS/AOSInitializer";
+import "../../App.css";
+import AOSInitializer from "../AOS/AOSInitializer";
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" data-aos="fade-down" data-aos-duration="2000">
