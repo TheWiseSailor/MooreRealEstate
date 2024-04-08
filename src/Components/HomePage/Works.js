@@ -4,9 +4,10 @@ import AOSInitializer from "../AOS/AOSInitializer";
 const HowItWorksSection = () => {
   return (
     <section id="how-it-works" data-aos="fade-down" data-aos-duration="2000">
+      <h2>How It Works</h2>
       <div className="container">
         <AOSInitializer />
-        <h2>How It Works</h2>
+        
         <div className="flex">
           <div>
             <span
