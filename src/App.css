@@ -55,7 +55,7 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  color: #f69314;
+  color: rgb(255, 215, 0) ;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
@@ -80,7 +80,7 @@ p {
 }
 
 button.rounded {
-  background: #f69314;
+  background: rgb(255, 215, 0) ;
   border: none;
 
   font-size: 16px;
@@ -162,7 +162,7 @@ header ul.is-sticky li a,
 header ul li a:hover,
 header ul li a.active,
 #logo {
-  color: #f69314;
+  color: rgb(255, 215, 0) ;
 }
 
 header ul.is-sticky li a:hover,
@@ -217,7 +217,7 @@ header ul.is-sticky li a.active,
 /* start: how it works styles */
 #how-it-works {
   padding: 3rem 0;
-  background: #f8f9fa;
+  background-color: rgb(0, 51, 102);
   text-align: center;
 }
 
@@ -235,7 +235,7 @@ header ul.is-sticky li a.active,
 }
 
 #how-it-works span.fas {
-  color: #f69314;
+  color: rgb(255, 215, 0) ;
   font-size: 35px;
 }
 /* end: how it works styles */
@@ -243,18 +243,22 @@ header ul.is-sticky li a.active,
 .property-container {
   display: flex;
   justify-content: center;
-
+  background-color:rgb(0, 112, 115) ;
   flex-wrap: wrap;
-  padding-bottom: 90px;
+  padding-bottom: 150px;
 }
-.Todays-Title,
-.AgentHomepage {
-  color: #f69314;
+.Todays-Title {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-color:rgb(0, 112, 115) ;
+
+  color: rgb(255, 215, 0) ;
 }
 .property-card {
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   margin: 16px;
   width: 250px;
   overflow: hidden;
@@ -289,6 +293,9 @@ header ul.is-sticky li a.active,
 }
 
 /* RealEstateListing.css */
+.real-estate-agents-container{
+
+}
 .listing-button {
   background-color: #4caf50; /* Green */
   border: none;
@@ -395,22 +402,25 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  margin-bottom: 150px;
+  background-color: rgb(0, 51, 102);
+padding-bottom: 150px;
+padding-top: 100px;
 }
 
 .agent-card {
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 38px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
-  width: 250px;
+width: 250px !important;
   margin: 40px;
   text-decoration: none;
   color: black;
 }
-
+.AgentHomepage {
+  color: rgb(255, 215, 0)
+}
 .agent-card:hover {
   transform: scale(1.05);
 }
@@ -430,7 +440,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: #f69314;
+  color: rgb(255, 215, 0) ;
   display: block;
   margin: 0 auto;
 }
@@ -455,13 +465,14 @@ h1 {
 
 .ContactUsNow {
   text-align: center;
-  color: #f69314;
+  color: rgb(255, 215, 0) ;
 }
 
 .contact-container-form {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-color: rgb(0, 112, 115);
 }
 
 .company-info-container {
@@ -476,7 +487,9 @@ h1 {
 
   text-align: center;
 }
-
+.contact-container-form{
+  background-color:rgb(0, 112, 115) ;
+}
 .contact-form-container {
   max-width: 750px;
   margin: 20px auto;
@@ -504,7 +517,7 @@ textarea {
   padding: 12px;
   box-sizing: border-box;
   outline: none;
-  border: 2px solid #f69314;
+  border: 2px solid rgb(255, 215, 0) ;
   border-radius: 30px;
   resize: vertical;
 }
@@ -550,7 +563,7 @@ textarea {
 /* SOCIAL LOGOS */
 @media (min-width: 620px) {
   .contact-form-container {
-    width: 100%;
+  width:100vw;
   }
   .company-info-container {
     max-height: 370px;
@@ -560,8 +573,8 @@ textarea {
 
 @media (max-width: 1468px) {
   .contact-container-form {
-    margin-left: 10%;
-    margin-right: 10%;
+    width:100vw;
+
   }
 }
 
@@ -672,7 +685,7 @@ font-weight: bold;
 
   nav ul li a.active,
   nav ul li a:hover {
-    color: #f69314;
+    color: rgb(255, 215, 0) ;
   }
 }
 

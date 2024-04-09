@@ -1,10 +1,10 @@
 .HeaderPrimary {
-  background: black;
+  background: rgb(0, 51, 102);
   transition: background-color 0.3s ease;
   position:relative;
   margin-top: -20px;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 margin-bottom: -15px;
 }
 .HeaderPrimary.contact {
