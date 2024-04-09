@@ -10,20 +10,37 @@ const Header = () => {
   const [isContactClicked, setIsContactClicked] = useState(false);
   const [isResumeClicked, setIsResumeClicked] = useState(false); 
   const [isPortfolioClicked, setIsPortfolioClicked] = useState(false); 
+  const [scrolling, setScrolling] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     const { pathname } = location;
+    const isHomePage = pathname === '/';
     setIsContactClicked(pathname.toLowerCase() === '/properties');
     setIsResumeClicked(pathname.toLowerCase() === '/news');
     setIsPortfolioClicked(pathname.toLowerCase() === '/contact');
+
+    const handleScroll = () => {
+      if (window.scrollY > 0 && isHomePage) { // Only change background color if on the home page
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [location]);
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <header>
+    <header className={scrolling ? 'scrolled' : ''}>
       <div className={`HeaderPrimary ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isPortfolioClicked ? 'portfolio' : ''}`}>
         <div className="container header">
           <div className="logo-container">
