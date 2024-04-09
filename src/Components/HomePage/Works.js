@@ -16,7 +16,7 @@ const HowItWorksSection = () => {
               data-aos-duration="3000"
             ></span>
             <h4>Find a Property.</h4>
-            <p>
+            <p className="works-p">
               Explore a variety of properties to find the perfect one that suits
               your needs and preferences.
             </p>
@@ -24,12 +24,12 @@ const HowItWorksSection = () => {
 
           <div>
             <span
-              className="fas fa-dollar-sign"
+              className="fas fa-dollar-sign "
               data-aos="fade-down"
               data-aos-duration="3000"
             ></span>
             <h4>Buy a Property.</h4>
-            <p>
+            <p className="works-p">
               Discover the joy of home ownership by exploring our diverse range
               of properties available for purchase.
             </p>
@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
               data-aos-duration="3000"
             ></span>
             <h4>Investing.</h4>
-            <p>
+            <p className="works-p">
               Explore investment opportunities in real estate and make informed
               decisions for a secure financial future.
             </p>
