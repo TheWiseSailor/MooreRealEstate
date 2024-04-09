@@ -50,9 +50,9 @@ const Header = () => {
           </div>
           <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
             <ul>
-              <li><Link to="/properties" className={isResumeClicked ? 'black-and-white' : ''}>Properties</Link></li>
-              <li><Link to="/news" className={isPortfolioClicked ? 'black-and-white' : ''}>News</Link></li>
-              <li><Link to="/contact" className={isContactClicked ? 'black-and-white' : ''}>Contact</Link></li>
+              <li className='nav-li'><Link to="/properties" className={isResumeClicked ? 'black-and-white' : ''}>Properties</Link></li>
+              <li className='nav-li'><Link to="/news" className={isPortfolioClicked ? 'black-and-white' : ''}>News</Link></li>
+              <li className='nav-li'><Link to="/contact" className={isContactClicked ? 'black-and-white' : ''}>Contact</Link></li>
             </ul>
           </nav>
           <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>

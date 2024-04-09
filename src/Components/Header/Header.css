@@ -1,24 +1,26 @@
 .HeaderPrimary {
   background: rgb(0, 51, 102);
   transition: background-color 0.3s ease;
-  position:relative;
+  position: relative;
   margin-top: -20px;
   padding-top: 30px;
   padding-bottom: 25px;
-margin-bottom: -15px;
-}
-.HeaderPrimary.contact {
-  background-color: rgb(0, 112, 115); 
-  color: white; 
-}
-.HeaderPrimary.resume {
-  background-color: #002B5B;
-  max-height: 30px;
-}
-.HeaderPrimary.portfolio {
-  background-color: #EA5455;
+  margin-bottom: -15px;
 }
 
+.HeaderPrimary.contact {
+  background-color: rgb(0, 112, 115);
+  color: white;
+}
+
+.HeaderPrimary.resume {
+  background-color: #002b5b;
+  max-height: 30px;
+}
+
+.HeaderPrimary.portfolio {
+  background-color: #ea5455;
+}
 
 .container {
   width: 90%;
@@ -29,7 +31,6 @@ margin-bottom: -15px;
 }
 
 .logo {
-
   max-width: 150px;
   font-weight: bold;
   color: #ffe9e9;
@@ -50,10 +51,14 @@ margin-bottom: -15px;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: -10px;
+  margin-top: 0; 
   display: flex;
   font-size: 20px;
   font-weight: bold;
+}
+
+.nav-li {
+  margin-top: 0; 
 }
 
 .navbar ul li:last-child {
@@ -83,10 +88,10 @@ margin-bottom: -15px;
 .container .navbar.open ul,
 .container .navbar.open {
   display: flex;
-
   margin-left: 20px;
+
   border-radius: 0 0 10px 10px;
-  background-color: rgb(0, 112, 115);
+
 }
 
 @media (max-width: 768px) {
@@ -94,25 +99,27 @@ margin-bottom: -15px;
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
-    left: 75%;
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: transparent;
+    top: 60px; 
+    left: 0; 
+    width: 100%; 
+
+    
   }
+  
   .container .navbar.open ul,
   .container .navbar.open {
     display: flex;
-   
-  max-width: 120px;
-    margin-left: -40px;
-    border-radius: 0 0 15px 15px;
-    background-color: rgb(0, 112, 115);
+    flex-direction: column; 
+    margin-left: 0;
+    border-radius: 0;
+    
   }
+
   .navbar ul li a {
     text-decoration: none;
     color: #fdfdfd;
     transition: color 0.3s ease;
+    
   }
 
   .mobile-menu-icon {
@@ -124,11 +131,6 @@ margin-bottom: -15px;
 @media (min-width: 769px) {
   .navbar ul li {
     margin-left: 20px;
-
   }
-  .container .navbar.open ul,
-.container .navbar.open {
-  background: transparent;
 
-}
 }
