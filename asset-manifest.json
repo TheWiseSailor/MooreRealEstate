@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MooreRealEstate/static/css/main.f72bdabb.css",
+    "main.css": "/MooreRealEstate/static/css/main.c0933d4d.css",
     "main.js": "/MooreRealEstate/static/js/main.b2d00257.js",
     "static/js/453.f367c4d3.chunk.js": "/MooreRealEstate/static/js/453.f367c4d3.chunk.js",
     "static/media/Listing3Image4.jpg": "/MooreRealEstate/static/media/Listing3Image4.b0d716ce246517688d5f.jpg",
@@ -18,7 +18,6 @@
     "static/media/Property4.jpg": "/MooreRealEstate/static/media/Property4.5015f0ee09c067e8844e.jpg",
     "static/media/Listing1Image3.jpg": "/MooreRealEstate/static/media/Listing1Image3.db4e3de8a84e4cbf7740.jpg",
     "static/media/Listing3Image3.jpg": "/MooreRealEstate/static/media/Listing3Image3.1e84ae8773411cf11840.jpg",
-    "static/media/ContactBg.jpg": "/MooreRealEstate/static/media/ContactBg.707bf172ee3cf4c36b8d.jpg",
     "static/media/Listing4Image2.jpg": "/MooreRealEstate/static/media/Listing4Image2.88ef3e134be108f5ae71.jpg",
     "static/media/AnnaMae.png": "/MooreRealEstate/static/media/AnnaMae.d62b5cc5fcac18a7eb42.png",
     "static/media/SamanthaBennett.png": "/MooreRealEstate/static/media/SamanthaBennett.b1e8beff07d21ac0fd34.png",
@@ -45,12 +44,12 @@
     "static/media/Listing1.png": "/MooreRealEstate/static/media/Listing1.6b03ffa043983bc80611.png",
     "static/media/logo.png": "/MooreRealEstate/static/media/logo.3ef9842103960da1a390.png",
     "index.html": "/MooreRealEstate/index.html",
-    "main.f72bdabb.css.map": "/MooreRealEstate/static/css/main.f72bdabb.css.map",
+    "main.c0933d4d.css.map": "/MooreRealEstate/static/css/main.c0933d4d.css.map",
     "main.b2d00257.js.map": "/MooreRealEstate/static/js/main.b2d00257.js.map",
     "453.f367c4d3.chunk.js.map": "/MooreRealEstate/static/js/453.f367c4d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f72bdabb.css",
+    "static/css/main.c0933d4d.css",
     "static/js/main.b2d00257.js"
   ]
 }
