@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("../ContactPageRender/ContactBg.jpg");
+  background-color: rgb(255, 215, 0) ;
 
   background-size: cover;
 
@@ -18,7 +18,7 @@
   width: 60%;
   max-width: 500px;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: rgb(0, 112, 115);
   border-radius: 28px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -30,9 +30,13 @@
 
 .form-field {
   margin-bottom: 15px;
+
+}
+.label-container,.label-container-page{
+  color: rgb(255, 215, 0) ;
 }
 .button-container-page {
-  background-color: #2196f3;
+  background-color: #002b5b;
   color: white;
   padding: 14px 0;
 
