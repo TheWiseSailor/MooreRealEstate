@@ -554,7 +554,10 @@ textarea {
 .button-container:hover {
   background-color: #4caf50;
 }
-
+.social-logo {
+  margin-top: 50px !important;
+  margin: 0 10px; 
+}
 .confirmation-message-container {
   background-color: #4caf50;
   color: white;
