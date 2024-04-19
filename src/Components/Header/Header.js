@@ -10,20 +10,18 @@ const Header = () => {
   const [isContactClicked, setIsContactClicked] = useState(false);
   const [isResumeClicked, setIsResumeClicked] = useState(false); 
   const [isNewsClicked, setIsNewsClicked] = useState(false); 
-
   const [isPortfolioClicked, setIsPortfolioClicked] = useState(false); 
   const [scrolling, setScrolling] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     const { pathname } = location;
-    const isHomePage = pathname === '/';
     setIsContactClicked(pathname.toLowerCase() === '/properties');
     setIsNewsClicked(pathname.toLowerCase() === '/news');
     setIsPortfolioClicked(pathname.toLowerCase() === '/contact');
 
     const handleScroll = () => {
-      if (window.scrollY > 0 && isHomePage) { // Only change background color if on the home page
+      if (window.scrollY > 0) {
         setScrolling(true);
       } else {
         setScrolling(false);
@@ -42,8 +40,8 @@ const Header = () => {
   };
 
   return (
-    <header className={scrolling ? 'scrolled' : ''}>
-      <div className={`HeaderPrimary ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''}${isPortfolioClicked ? 'portfolio' : ''}`}>
+    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''}`}>
+      <div className={`HeaderPrimaryInner ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''} ${isPortfolioClicked ? 'portfolio' : ''}`}>
         <div className="container header">
           <div className="logo-container">
             <Link to="/">
@@ -67,4 +65,3 @@ const Header = () => {
 }
 
 export default Header;
-//this will be duped for the actual commission website of moore realestate which will be used for actual realestate listings adn etc
