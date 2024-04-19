@@ -40,24 +40,22 @@ const Header = () => {
   };
 
   return (
-    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''}`}>
-      <div className={`HeaderPrimaryInner ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''} ${isPortfolioClicked ? 'portfolio' : ''}`}>
-        <div className="container header">
-          <div className="logo-container">
-            <Link to="/">
-              <img src={logo} alt="Logo" className="logo" />
-            </Link>
-          </div>
-          <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
-            <ul>
-              <li className='nav-li'><Link to="/properties" className={isResumeClicked ? 'black-and-white' : ''}>Properties</Link></li>
-              <li className='nav-li'><Link to="/news" className={isPortfolioClicked ? 'black-and-white' : ''}>News</Link></li>
-              <li className='nav-li'><Link to="/contact" className={isContactClicked ? 'black-and-white' : ''}>Contact</Link></li>
-            </ul>
-          </nav>
-          <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
-            <FontAwesomeIcon icon={faBars} className='mobile-menu-icon MMI-icon' />
-          </div>
+    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''} ${isPortfolioClicked ? 'portfolio' : ''}`}>
+      <div className="container header">
+        <div className="logo-container">
+          <Link to="/">
+            <img src={logo} alt="Logo" className="logo" />
+          </Link>
+        </div>
+        <nav className={`navbar ${isMobileMenuOpen ? 'open' : ''}`}>
+          <ul>
+            <li className='nav-li'><Link to="/properties" className={isResumeClicked ? 'black-and-white' : ''}>Properties</Link></li>
+            <li className='nav-li'><Link to="/news" className={isPortfolioClicked ? 'black-and-white' : ''}>News</Link></li>
+            <li className='nav-li'><Link to="/contact" className={isContactClicked ? 'black-and-white' : ''}>Contact</Link></li>
+          </ul>
+        </nav>
+        <div className={`mobile-menu-icon ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
+          <FontAwesomeIcon icon={faBars} className='mobile-menu-icon MMI-icon' />
         </div>
       </div>
     </header>
