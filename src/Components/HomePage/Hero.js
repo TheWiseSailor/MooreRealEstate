@@ -98,7 +98,7 @@ const HeroSection = () => {
         <div className="hero-text">
           <AOSInitializer />
           <h1 data-aos="fade-down" data-aos-duration="3000">
-            Buy and sell real estate properties
+          Get "MOORE" with us!
           </h1>
           <AOSInitializer />
           <p data-aos="fade-up" data-aos-duration="3000">

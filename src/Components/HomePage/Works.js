@@ -1,5 +1,8 @@
 import React from "react";
 import "../../App.css";
+import homeIcon from "../HomePage/HomePageImages/homeicon.png";
+import dollarIcon from "../HomePage/HomePageImages/dollaricon.png";
+import searchIcon from "../HomePage/HomePageImages/searchicon.png";
 import AOSInitializer from "../AOS/AOSInitializer";
 const HowItWorksSection = () => {
   return (
@@ -15,6 +18,7 @@ const HowItWorksSection = () => {
               data-aos="fade-down"
               data-aos-duration="3000"
             ></span>
+                <img src={searchIcon} alt="Search Icon" />
             <h4>Find a Property.</h4>
             <p className="works-p">
               Explore a variety of properties to find the perfect one that suits
@@ -28,6 +32,7 @@ const HowItWorksSection = () => {
               data-aos="fade-down"
               data-aos-duration="3000"
             ></span>
+                <img src={homeIcon} alt="Home Icon" />
             <h4>Buy a Property.</h4>
             <p className="works-p">
               Discover the joy of home ownership by exploring our diverse range
@@ -41,6 +46,7 @@ const HowItWorksSection = () => {
               data-aos="fade-down"
               data-aos-duration="3000"
             ></span>
+                 <img src={dollarIcon} alt="Dollar Icon" />
             <h4>Investing.</h4>
             <p className="works-p">
               Explore investment opportunities in real estate and make informed
