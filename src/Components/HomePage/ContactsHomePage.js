@@ -60,6 +60,7 @@ const ContactForm = () => {
   };
 
   return (
+    <div className="contact-container-formbg">
     <div className="contact-container-form">
       <h1
         className="ContactUsNow mb-12"
@@ -194,6 +195,7 @@ const ContactForm = () => {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 };
