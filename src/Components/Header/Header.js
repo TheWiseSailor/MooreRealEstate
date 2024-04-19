@@ -9,6 +9,8 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isContactClicked, setIsContactClicked] = useState(false);
   const [isResumeClicked, setIsResumeClicked] = useState(false); 
+  const [isNewsClicked, setIsNewsClicked] = useState(false); 
+
   const [isPortfolioClicked, setIsPortfolioClicked] = useState(false); 
   const [scrolling, setScrolling] = useState(false);
   const location = useLocation();
@@ -17,7 +19,7 @@ const Header = () => {
     const { pathname } = location;
     const isHomePage = pathname === '/';
     setIsContactClicked(pathname.toLowerCase() === '/properties');
-    setIsResumeClicked(pathname.toLowerCase() === '/news');
+    setIsNewsClicked(pathname.toLowerCase() === '/news');
     setIsPortfolioClicked(pathname.toLowerCase() === '/contact');
 
     const handleScroll = () => {
@@ -41,7 +43,7 @@ const Header = () => {
 
   return (
     <header className={scrolling ? 'scrolled' : ''}>
-      <div className={`HeaderPrimary ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isPortfolioClicked ? 'portfolio' : ''}`}>
+      <div className={`HeaderPrimary ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''}${isPortfolioClicked ? 'portfolio' : ''}`}>
         <div className="container header">
           <div className="logo-container">
             <Link to="/">

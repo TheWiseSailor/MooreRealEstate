@@ -36,6 +36,7 @@ color: rgb(255, 215, 0);
 }
 
 .animated-search-bar {
+  margin-top: 70px;
   width: 210px; 
   padding: 10px;
   border: 1px solid #ccc;

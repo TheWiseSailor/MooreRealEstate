@@ -1,5 +1,5 @@
 .HeaderPrimary {
-  background: rgb(0, 51, 102);
+  background: rgb(0, 112, 115);
   transition: background-color 0.3s ease;
   position: relative;
   margin-top: -20px;
@@ -18,6 +18,10 @@
   max-height: 30px;
 }
 
+.HeaderPrimary.news {
+  background-color: #002b5b;
+  max-height: 30px;
+}
 .HeaderPrimary.portfolio {
   background-color: #002b5b;
 }
@@ -31,7 +35,8 @@
 }
 
 .logo {
-  max-width: 150px;
+ width: 200px;
+  height: 50px;
   font-weight: bold;
   color: #ffe9e9;
   text-decoration: none;
@@ -79,6 +84,7 @@
   display: none;
   color: rgb(255, 255, 255);
   margin-left: 50px;
+  margin-top: -5px;
 }
 
 .MMI-icon {
