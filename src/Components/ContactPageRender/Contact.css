@@ -21,7 +21,7 @@
   background-color: rgb(0, 112, 115);
   border-radius: 28px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 100px;
+margin-top: -100px;
 }
 
 .form-container {
@@ -63,4 +63,10 @@
   border-radius: 6px;
   text-align: center;
   margin-top: 16px;
+}
+@media (min-width: 769px) {  
+  .HeaderPrimary.contact .container{
+    margin-top: 100px;
+  }
+
 }
