@@ -159,8 +159,8 @@ const ContactForm = () => {
         data-aos="fade-up"
         data-aos-duration="3000"
       >
-        <h2 className="pb-12">Our Location</h2>
-        <p className="pb-6">29058 North Pole Drive, Wilmington, NC</p>
+        <h2 className="pb-12">Our Socials</h2>
+  
         <p className="pb-6">Phone: +1 (555) 123-4567</p>
         <div className="social-logos-container">
           <a
