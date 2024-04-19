@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <footer className={`footer ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isPortfolioClicked ? 'portfolio' : ''}`}>
-      <p className='ft'>Moore Real Estate &copy; All rights reserved.</p>
+      <p className='ft'>Moore Real Estate Group &copy; All rights reserved.</p>
     </footer>
   );
 };
