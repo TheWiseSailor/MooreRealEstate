@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MooreRealEstate/static/css/main.83db86f5.css",
-    "main.js": "/MooreRealEstate/static/js/main.b2d00257.js",
+    "main.css": "/MooreRealEstate/static/css/main.c7bc6313.css",
+    "main.js": "/MooreRealEstate/static/js/main.5f463f52.js",
     "static/js/453.f367c4d3.chunk.js": "/MooreRealEstate/static/js/453.f367c4d3.chunk.js",
     "static/media/Listing3Image4.jpg": "/MooreRealEstate/static/media/Listing3Image4.b0d716ce246517688d5f.jpg",
     "static/media/Listing3Image2.jpg": "/MooreRealEstate/static/media/Listing3Image2.db58a8a656641b760754.jpg",
@@ -25,6 +25,7 @@
     "static/media/TopAboutImage.png": "/MooreRealEstate/static/media/TopAboutImage.14eef4c8cc7dba4b9552.png",
     "static/media/About us.png": "/MooreRealEstate/static/media/About us.098c2e4fc2c041939b10.png",
     "static/media/ZachHolland.png": "/MooreRealEstate/static/media/ZachHolland.3c8db41de96ffbec8099.png",
+    "static/media/logo.png": "/MooreRealEstate/static/media/logo.e29b6ddd4a72fddfd344.png",
     "static/media/Listing4.png": "/MooreRealEstate/static/media/Listing4.ecc5fb6a1d7a1d14ff20.png",
     "static/media/Property9.jpg": "/MooreRealEstate/static/media/Property9.de7a2374eea76ff67b9a.jpg",
     "static/media/Listing3.png": "/MooreRealEstate/static/media/Listing3.e95c2acca92c1ca69ee4.png",
@@ -42,14 +43,13 @@
     "static/media/Listing4Image5.jpg": "/MooreRealEstate/static/media/Listing4Image5.d13220e9d5e9da361e0c.jpg",
     "static/media/Property6.jpg": "/MooreRealEstate/static/media/Property6.81982369f2f280ce0604.jpg",
     "static/media/Listing1.png": "/MooreRealEstate/static/media/Listing1.6b03ffa043983bc80611.png",
-    "static/media/logo.png": "/MooreRealEstate/static/media/logo.3ef9842103960da1a390.png",
     "index.html": "/MooreRealEstate/index.html",
-    "main.83db86f5.css.map": "/MooreRealEstate/static/css/main.83db86f5.css.map",
-    "main.b2d00257.js.map": "/MooreRealEstate/static/js/main.b2d00257.js.map",
+    "main.c7bc6313.css.map": "/MooreRealEstate/static/css/main.c7bc6313.css.map",
+    "main.5f463f52.js.map": "/MooreRealEstate/static/js/main.5f463f52.js.map",
     "453.f367c4d3.chunk.js.map": "/MooreRealEstate/static/js/453.f367c4d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83db86f5.css",
-    "static/js/main.b2d00257.js"
+    "static/css/main.c7bc6313.css",
+    "static/js/main.5f463f52.js"
   ]
 }
