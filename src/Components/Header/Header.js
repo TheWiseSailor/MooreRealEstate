@@ -11,6 +11,7 @@ const Header = () => {
   const [isResumeClicked, setIsResumeClicked] = useState(false); 
   const [isNewsClicked, setIsNewsClicked] = useState(false); 
   const [isPortfolioClicked, setIsPortfolioClicked] = useState(false); 
+  const [isPropertiesClicked, setIsPropertiesClicked] = useState(false);
   const [scrolling, setScrolling] = useState(false);
   const location = useLocation();
 
@@ -19,7 +20,7 @@ const Header = () => {
     setIsContactClicked(pathname.toLowerCase() === '/properties');
     setIsNewsClicked(pathname.toLowerCase() === '/news');
     setIsPortfolioClicked(pathname.toLowerCase() === '/contact');
-
+    setIsPropertiesClicked(pathname.toLowerCase() === '/properties');
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrolling(true);
@@ -40,7 +41,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''} ${isPortfolioClicked ? 'portfolio' : ''}`}>
+    <header className={`HeaderPrimary ${scrolling ? 'hidden' : ''} ${isContactClicked ? 'contact' : ''} ${isResumeClicked ? 'resume' : ''} ${isNewsClicked ? 'news' : ''} ${isPortfolioClicked ? 'portfolio' : ''}${isPropertiesClicked ? 'properties' : ''}`}>
       <div className="container header">
         <div className="logo-container">
           <Link to="/">

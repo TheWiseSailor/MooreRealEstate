@@ -16,7 +16,9 @@
   color: white;
   transform: translateY(none);
 }
-
+.HeaderPrimary.properties {
+margin-top: -100px;
+}
 .HeaderPrimary.resume {
   background-color: #002b5b;
   max-height: 30px;
