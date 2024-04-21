@@ -5,32 +5,32 @@ import { Link } from "react-router-dom";
 import AOSInitializer from "../AOS/AOSInitializer";
 import "../../App.css";
 
-import SamanthaBennettImage from "../images/AgentHomepageImages/SamanthaBennett.png";
-import AnnaMaeImage from "../images/AgentHomepageImages/AnnaMae.png";
-import ZachHollandImage from "../images/AgentHomepageImages/ZachHolland.png";
-import KenLowellImage from "../images/AgentHomepageImages/KenLowell.png";
+import AimeeMooreImage from "../images/AgentHomepageImages/SamanthaBennett.png";
+import CarterMooreImage from "../images/AgentHomepageImages/Carter.png";
+// import ZachHollandImage from "../images/AgentHomepageImages/ZachHolland.png";
+// import KenLowellImage from "../images/AgentHomepageImages/KenLowell.png";
 
 const agentData = [
   {
     id: 1,
-    name: "Samantha Bennett",
-    image: SamanthaBennettImage,
+    name: "Aimee Moore",
+    image: AimeeMooreImage,
   },
   {
     id: 2,
-    name: "Anna Mae",
-    image: AnnaMaeImage,
+    name: "Carter Moore",
+    image: CarterMooreImage,
   },
-  {
-    id: 3,
-    name: "Zach Holland",
-    image: ZachHollandImage,
-  },
-  {
-    id: 4,
-    name: "Ken Lowell",
-    image: KenLowellImage,
-  },
+  // {
+  //   id: 3,
+  //   name: "Zach Holland",
+  //   image: ZachHollandImage,
+  // },
+  // {
+  //   id: 4,
+  //   name: "Ken Lowell",
+  //   image: KenLowellImage,
+  // },
 ];
 
 const AgentCard = ({ agent }) => (

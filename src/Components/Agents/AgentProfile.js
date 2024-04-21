@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import agent1Image from "../images/AgentHomepageImages/SamanthaBennett.png";
-import agent2Image from "../images/AgentHomepageImages/AnnaMae.png";
-import agent3Image from "../images/AgentHomepageImages/ZachHolland.png";
-import agent4Image from "../images/AgentHomepageImages/KenLowell.png";
+import agent1Image from "../images/AgentHomepageImages/Carter.png";
+import agent2Image from "../images/AgentHomepageImages/Carter.png";
+// import agent3Image from "../images/AgentHomepageImages/ZachHolland.png";
+// import agent4Image from "../images/AgentHomepageImages/KenLowell.png";
 import AOSInitializer from "../AOS/AOSInitializer.js";
 import facebookIcon from "./Facebook.png";
 import instagramIcon from "./Instagram.png";
@@ -14,7 +14,7 @@ import "./agents.css";
 const agentData = [
   {
     id: 1,
-    name: "Samantha Bennett",
+    name: "Aimee Moore",
     image: agent1Image,
     description: "Real Estate Broker",
 
@@ -28,7 +28,7 @@ const agentData = [
   },
   {
     id: 2,
-    name: "Anna Mae",
+    name: "Carter Moore",
     image: agent2Image,
     description: "Broker Associate Agent",
     phoneNumber: "+1234567890",
@@ -39,32 +39,32 @@ const agentData = [
       instagram: "@AnnaMae_realestate",
     },
   },
-  {
-    id: 3,
-    name: "Zach Holland",
-    image: agent3Image,
-    description: "Senior Real Estate Agent",
-    phoneNumber: "+1234567890",
-    address: "324 South Main St, Wilmington, NC",
-    socials: {
-      facebook: "facebook.com/samantha.bennett",
-      twitter: "@ZachHolland_realtor",
-      instagram: "@ZachH_realestate",
-    },
-  },
-  {
-    id: 4,
-    name: "Ken Lowell",
-    image: agent4Image,
-    description: "Senior Real Estate Agent",
-    phoneNumber: "+1234567890",
-    address: "183 North Main St, Wilmington, NC",
-    socials: {
-      facebook: "facebook.com/samantha.bennett",
-      twitter: "@Ken_realtor",
-      instagram: "@Ken_realestate",
-    },
-  },
+  // {
+  //   id: 3,
+  //   name: "Zach Holland",
+  //   image: agent3Image,
+  //   description: "Senior Real Estate Agent",
+  //   phoneNumber: "+1234567890",
+  //   address: "324 South Main St, Wilmington, NC",
+  //   socials: {
+  //     facebook: "facebook.com/samantha.bennett",
+  //     twitter: "@ZachHolland_realtor",
+  //     instagram: "@ZachH_realestate",
+  //   },
+  // },
+  // {
+  //   id: 4,
+  //   name: "Ken Lowell",
+  //   image: agent4Image,
+  //   description: "Senior Real Estate Agent",
+  //   phoneNumber: "+1234567890",
+  //   address: "183 North Main St, Wilmington, NC",
+  //   socials: {
+  //     facebook: "facebook.com/samantha.bennett",
+  //     twitter: "@Ken_realtor",
+  //     instagram: "@Ken_realestate",
+  //   },
+  // },
 ];
 
 const AgentProfile = () => {
@@ -86,21 +86,24 @@ const AgentProfile = () => {
           className="AgentImage"
           data-aos="fade-up"
           data-aos-duration="3000"
-        />
+        /> <div className="AgentNameBackground">
         <h1 className="AgentName" data-aos="fade-down" data-aos-duration="3000">
           {agent.name}
         </h1>
+        </div>
+
         <p className="Description" data-aos="fade-up" data-aos-duration="3000">
           {agent.description}
         </p>
 
         {/* Additional Sections */}
 
-        {agent.address && (
+        {/* {agent.address && (
           <p className="Address" data-aos="fade-up" data-aos-duration="3000">
             {agent.address}
           </p>
-        )}
+        )} */} 
+        {/* dont need agent adress until the company grows, but I will keep this */}
         {agent.phoneNumber && (
           <p
             className="PhoneNumber"
