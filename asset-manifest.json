@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MooreRealEstate/static/css/main.20297886.css",
+    "main.css": "/MooreRealEstate/static/css/main.dd64d8b9.css",
     "main.js": "/MooreRealEstate/static/js/main.02b738e4.js",
     "static/js/453.f367c4d3.chunk.js": "/MooreRealEstate/static/js/453.f367c4d3.chunk.js",
     "static/media/Listing3Image4.jpg": "/MooreRealEstate/static/media/Listing3Image4.b0d716ce246517688d5f.jpg",
@@ -42,12 +42,12 @@
     "static/media/Property6.jpg": "/MooreRealEstate/static/media/Property6.81982369f2f280ce0604.jpg",
     "static/media/Listing1.png": "/MooreRealEstate/static/media/Listing1.6b03ffa043983bc80611.png",
     "index.html": "/MooreRealEstate/index.html",
-    "main.20297886.css.map": "/MooreRealEstate/static/css/main.20297886.css.map",
+    "main.dd64d8b9.css.map": "/MooreRealEstate/static/css/main.dd64d8b9.css.map",
     "main.02b738e4.js.map": "/MooreRealEstate/static/js/main.02b738e4.js.map",
     "453.f367c4d3.chunk.js.map": "/MooreRealEstate/static/js/453.f367c4d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20297886.css",
+    "static/css/main.dd64d8b9.css",
     "static/js/main.02b738e4.js"
   ]
 }
