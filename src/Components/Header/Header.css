@@ -18,7 +18,15 @@
 }
 .HeaderPrimary.properties {
 margin-bottom: -100px;
+
 }
+@media (min-width: 769px) {
+  .HeaderPrimary.properties {
+    margin-top: -100px !important;
+  }
+
+}
+
 .HeaderPrimary.resume {
   background-color: #002b5b;
   max-height: 30px;
