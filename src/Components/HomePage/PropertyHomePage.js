@@ -13,7 +13,7 @@ const PropertyHomePage = () => {
     {
       id: 1,
       image: Listing1Image,
-      price: "$1,200,000 / $12-20k Month",
+      price: "$1.2_ M / $12-20k Month",
       details: "3 beds / 2 baths / 3500 sqft",
       address: "Wilmington, NC",
     },
